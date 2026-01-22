@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
 import { logoutUser } from "@/lib/firebase";
-import { Fingerprint } from "lucide-react";
+import Fingerprint from "lucide-react/dist/esm/icons/fingerprint";
 import { useToast } from "@/components/ui/use-toast";
 
 const Navbar = () => {
