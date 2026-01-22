@@ -8,7 +8,7 @@ const FaceRecognition = () => {
   const [folders, setFolders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/folders")
+    fetch("https://f2pay-backend.onrender.com/folders")
       .then((res) => res.json())
       .then((data) => setFolders(data)) // Store array in state
       .catch((err) => console.error("Error:", err));

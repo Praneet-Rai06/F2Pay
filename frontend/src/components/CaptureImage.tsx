@@ -34,7 +34,8 @@ const Camera = ({username}) => {
     setImage(imageData);
 
     // Send to backend with username
-    axios.post("http://localhost:3000/upload", { image: imageData, username })
+    axios.post("https://f2pay-backend.onrender.com/upload"
+, { image: imageData, username })
       .then(res => console.log("Image saved:", res.data))
       .catch(err => console.error("Error uploading:", err));
   };
